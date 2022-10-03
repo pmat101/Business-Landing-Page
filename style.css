@@ -1,0 +1,338 @@
+header {
+  background-color: #636c79;
+  padding: 2rem 4rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 500;
+}
+
+nav .logo {
+  flex: 2;
+}
+
+nav .logo img {
+  height: 100%;
+  width: auto;
+}
+
+nav ul {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+nav .chat {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.chat button {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  border: 1px solid #888;
+  padding: 0.8rem 3.2rem;
+  font-weight: 600;
+}
+
+header .hero {
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 4rem;
+}
+
+.hero .image {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .image img {
+  height: 72vh;
+  width: 72vw;
+}
+
+.hero .text {
+  flex: 1;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-right: 1rem;
+}
+
+.hero .text h1 {
+  font-size: 3rem;
+}
+
+.hero .text p {
+  line-height: 1.5rem;
+}
+
+.hero .text form {
+  align-self: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  border: 2px solid #fff;
+}
+
+.hero .text form span {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+form span img {
+  width: 1.4rem;
+}
+
+.hero .text form input {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  border: none;
+}
+
+.hero .text form button {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.top h2 {
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+  font-size: 2rem;
+}
+
+.top .stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.top .stats h3 {
+  font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: 00.1rem;
+  margin: 0.5rem 0;
+}
+
+.top .stats p {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.top .image img {
+  height: 100vh;
+  width: auto;
+  display: block;
+  margin: 4rem auto;
+}
+
+.middle h2 {
+  padding: 4rem 0;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.middle article {
+  margin: 0 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.middle article > * {
+  flex: 1 1 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.middle .description h3 {
+  font-size: 2.4rem;
+}
+
+.middle .description p {
+  line-height: 1.5rem;
+}
+
+.middle .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.middle .image img {
+  height: 70vh;
+  width: auto;
+}
+
+.bottom .blob {
+  margin: 8rem 4rem 4rem 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.blob > * {
+  flex: 1;
+}
+
+.blob h2 {
+  font-size: 2rem;
+}
+
+.bottom .profiles {
+  display: flex;
+  gap: 2rem;
+  margin: 0 4rem;
+}
+
+.bottom .profile .image {
+  height: 70%;
+  overflow: hidden;
+}
+
+.bottom .profile h4 {
+  font-size: 1.2rem;
+  padding: 0.8rem 0;
+}
+
+.bottom .profile p {
+  font-size: 0.8rem;
+}
+
+.bottom button {
+  display: block;
+  margin: 2rem auto;
+}
+
+body > footer {
+  background-color: #10181d;
+  color: #fff;
+  padding: 0 4rem;
+}
+
+footer .social {
+  display: flex;
+  padding: 2rem 0;
+  justify-content: space-between;
+}
+
+footer .links {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .links li {
+  padding: 0.5rem 0;
+  opacity: 0.5;
+}
+
+footer .links li:first-child {
+  opacity: 1;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    padding: 1rem 2rem;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .chat button {
+    padding: 0.6rem 2.4rem;
+  }
+  header .hero {
+    padding: 2rem 2rem;
+    gap: 2rem;
+  }
+  .hero .text h1 {
+    font-size: 2rem;
+  }
+  .top .image {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .middle article {
+    margin: 0 2rem;
+    gap: 2rem;
+  }
+  .middle article > * {
+    padding: 0 1rem;
+  }
+  .bottom .blob {
+    margin: 8rem 2rem 4rem 2rem;
+  }
+  .bottom .profiles {
+    gap: 1rem;
+    margin: 0 1rem;
+  }
+  .profiles .image {
+    height: 35vh;
+  }
+  body > footer {
+    padding: 0 2rem;
+  }
+  footer .links {
+    padding: 2rem 0;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    padding: 0.5rem 1rem;
+  }
+  nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .hero {
+    flex-wrap: wrap;
+  }
+  .hero .image {
+    display: none;
+  }
+  .middle article {
+    margin: 0 1rem;
+    gap: 1rem;
+  }
+  .middle article > * {
+    padding: 0 0.5rem;
+    flex: 1 1 50vw;
+  }
+  .bottom .blob {
+    margin: 4rem 1rem 2rem 1rem;
+  }
+  .profiles .image {
+    height: 18vh;
+  }
+  .bottom button {
+    margin-top: 4rem;
+  }
+  body > footer {
+    padding: 0 1rem;
+  }
+  footer .social .image {
+    display: none;
+  }
+}
